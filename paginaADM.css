@@ -1,0 +1,104 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-image: linear-gradient(99deg, #152d54, #345d9e, #23c23b);
+}
+
+/* Centraliza o menu */
+.nav-tabs {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    border-bottom: none;
+}
+
+.nav-tabs .nav-item {
+    margin: 0 5px;
+}
+
+.nav-tabs .nav-link {
+    color: #ffffff;
+    background-color: #345d9e;
+    border: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.nav-tabs .nav-link:hover {
+    background-color: #23c23b;
+    color: #ffffff;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #152d54;
+    color: #ffffff;
+}
+
+.nav-tabs .nav-link:focus {
+    box-shadow: none;
+}
+
+/* Estilo para os formulários */
+.tab-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Espaço entre as abas e o container */
+}
+
+.tab-pane {
+    width: 90%;
+    max-width: 500px;
+    max-height: 600px; /* Altura máxima com rolagem */
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-y: auto; 
+    overflow-x: hidden; 
+}
+
+
+.tab-pane h2 {
+    text-align: center;
+    color: #152d54;
+    margin-bottom: 15px;
+}
+
+.tab-pane form div {
+    margin-bottom: 10px;
+}
+
+.tab-pane label {
+    font-weight: bold;
+    color: #152d54;
+}
+
+.tab-pane input[type="text"],
+.tab-pane input[type="datetime"],
+.tab-pane input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.tab-pane .bt_enviar {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #23c23b;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tab-pane .bt_enviar:hover {
+    background-color: #152d54;
+}
