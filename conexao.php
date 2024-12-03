@@ -1,11 +1,11 @@
 <?php
 
-$servidor = "localhost";
-$usuario = "root";
-$senha = "";
-$dbname = "bd_farmacia";
+$host = getenv('DB_HOST'); // ou diretamente o host do Railway
+$dbname = getenv('DB_NAME');
+$user = getenv('DB_USER');
+$password = getenv('DB_PASS');
 
-$conn = mysqli_connect($servidor, $usuario, $senha, $dbname);
-
+$pdo = new PDO("mysql:host=$host;dbname=$dbname", $user, $password);
+$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 ?>
