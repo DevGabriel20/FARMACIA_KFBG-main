@@ -1,11 +1,10 @@
 <?php
 
-$host = getenv('DB_HOST'); // ou diretamente o host do Railway
-$dbname = getenv('DB_NAME');
-$user = getenv('DB_USER');
-$password = getenv('DB_PASS');
+$servidor = "autorack.proxy.rlwy.net";
+$usuario = "root";
+$senha = "xOkHZzUqTwSVBbzBxHkisBAYSxhwOmXe";
+$dbname = "railway";
+$porta = "47094";
 
-$pdo = new PDO("mysql:host=$host;dbname=$dbname", $user, $password);
-$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
+$conn = mysqli_connect($servidor, $usuario, $senha, $dbname, $porta);
 ?>
